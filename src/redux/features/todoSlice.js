@@ -7,11 +7,11 @@ export const todoSlice = createSlice({
   },
   reducers: {
     addTodo(state, action) {
-      if(action.payload === "") return
-      state.todosList.unshift(action.payload)
+      if (action.payload === "") return
+      state.todosList.unshift(action.payload);
     },
     removeTodo(state, action) {
-      state.todosList.splice(Number(action.payload), 1)
+      state.todosList.splice(Number(action.payload), 1);
     }
   }
 })

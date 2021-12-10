@@ -2,12 +2,11 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { removeTodo } from '../redux/features/todoSlice';
 
-export default function TodoItem({item, index}) {
+export default function TodoItem({ item, index }) {
   const dispatch = useDispatch();
 
   const handleDelete = (e) => {
     e.stopPropagation();
-    // const todoItem = e.target.parentElement;
     dispatch(removeTodo(index))
   }
 
