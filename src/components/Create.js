@@ -33,7 +33,7 @@ export default function Create() {
         <button
           type="submit"
           className="form-button">
-          Add Todo
+          Add
         </button>
       </form>
 
